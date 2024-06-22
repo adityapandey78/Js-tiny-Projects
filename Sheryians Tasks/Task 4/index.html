@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <!--Create an ul , allow users to add and remove list items dynamically using buttons-->
+    <ul>
+       
+    </ul>
+    <input type="text" placeholder="add new items">    
+    <button id="add">add</button>    
+    <button id="remove">remove</button>    
+</body>
+<script>
+    var add =document.querySelector("#add");
+    var remove =document.querySelector("#remove");
+    var inp=document.querySelector("input");
+    var ul= document.querySelector('ul');
+    
+    var li;// har baar ise append krenge ya fir delet krenge
+
+    add.addEventListener("click",function(){
+        if(inp.value.trim()===''){}
+        else{
+            li=document.createElement('li')//ek li create hoga
+            li.textContent=inp.value; //isse ab li me data de diya
+            ul.appendChild(li); //ye ul me jaake append ho jaayega
+            inp.value='';//isse wapas input box ka content blank ho jayega
+
+        }
+    })
+    remove.addEventListener("click",function(){
+        ul.removeChild(li);
+    })
+
+</script>
+</html>

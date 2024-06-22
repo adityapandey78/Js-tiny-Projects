@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    
+</head>
+<body>
+    <!--Build a countdown timer that starts when a button is clicked and updates the display in real time-->
+    <div id="wrapper">
+        <h1>0</h1>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+
+    </div>
+
+</body>
+<script>
+const start= document.querySelector("#start");
+const stop= document.querySelector("#stop");
+const reset= document.querySelector("#reset");
+
+const h1=document.querySelector("h1");
+let run;//run ko bahar bnaya ki do baar use kr sku
+
+start.addEventListener("click", function(){
+    let count=0;
+     run=setInterval(function(){
+        h1.textContent=count;
+         count++;
+    },1000)
+})
+stop.addEventListener("click",function(){
+    clearInterval(run);
+})
+reset.addEventListener("click",function(){
+    clearInterval(run);
+    h1.textContent="0";
+})
+
+</script>
+</html>

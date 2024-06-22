@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Create a form with input fields and a submit button. Use the javascript to validate the form and display an error message if the input is invalid -->
+    <form action="text" id="my-form">
+        <label for="fname">First name:</label>
+        <input id="inp1" type="text">
+        <label for="lname">Last name:</label>
+        <input id="inp2" type="text">
+        <input type="submit">
+    </form>
+    <h4></h4>
+</body>
+<script>
+//⚠️While dealing wqith forms , keep in mind that forms submission leads to reloading of the page and if teh page reloads, the Js will not run so we have to prevent that reloading
+
+//to prevent reloading one method is preventDefault()
+
+
+const form =document.querySelector(" form");
+// const inp1= document.querySelector("#inp1");
+// const inp2= document.querySelector("#inp2");
+
+//🟡the above method is also useful wil get very tedious to select all if tehr ear ehell lot of inputs
+
+// now using the inps attribute-> It's a nodelist containg all the fields of form
+const inps=document.querySelectorAll('input[type="text"]');
+
+const h4= document.querySelector("h4");
+form.addEventListener("submit",function(ev){
+    ev.preventDefault(); //AB JO BHI EVENTS honge unhe prevent default kr diya hai
+
+    //using the first method
+    // if(inp1.value===''|| inp2.value===''){
+    //     h4.textContent="Errror, some fields are blank!"
+    //     h4.style.color="red";
+    //     alert("Abey naam to sahi se daalo!")
+    // }
+    // else{
+    //     alert("form submitted successfully");
+    //     h4.textContent=""
+    // }
+
+
+    // inps.forEach(function(inp){
+    //     if(inp.value===''){
+    //         h4.textContent="Error";
+    //         h4.style.color="red"
+            
+    //     }
+        
+    //     else{
+    //         h4.textContent="Success";
+    //     }
+    // })
+
+    //🟡Prob with above method is that when we will enter the first value blanka nd second not black then it will not generate the error coz as the secod value is filled it will pass on to the else
+
+    //here we can nopt use the break as well
+
+    //so to make that way we canuse for loop
+
+    for(var i=0;i<inps.length;i++){
+        if(inps[i].value===''){
+            h4.textContent= "Error has occured, Please check your input!"
+            h4.style.color='red';
+            break;
+        }
+        else{
+            h4.textContent="Form Submitted Successfully!"
+        }
+    }
+
+})
+</script>
+</html>

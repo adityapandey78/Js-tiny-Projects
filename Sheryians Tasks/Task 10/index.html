@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3500px;
+            width: 100%;
+            background-color: blanchedalmond;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .progress{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: #4caf50;
+            z-index: 1000;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Show a progress bar which shows how much page has been scrolled!-->
+    <div class="progress"></div>
+    <div id="content">
+        <h3>Show a progress bar which shows how much page has been scrolled!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla voluptate sequi dolores. Earum aliquam, odit nam quisquam aperiam alias suscipit quasi harum ea animi enim adipisci vero, reiciendis odio voluptate sequi libero. Pariatur nisi, molestias sit similique soluta est odit, sapiente in obcaecati quod praesentium eius saepe sequi esse voluptatum magnam rerum, sint necessitatibus perferendis minus tempora odio veritatis dicta. Facere totam, nostrum, excepturi voluptate tenetur eligendi quasi harum maiores reprehenderit, earum commodi iusto ipsum voluptatem dolore! Labore impedit deleniti praesentium, facilis voluptatibus animi aperiam, eveniet, blanditiis nostrum alias officia aliquid voluptate voluptatum magnam placeat enim. Mollitia, id distinctio quis repellendus dolorum voluptate consectetur nostrum accusamus dolorem, adipisci neque labore eveniet dolore natus ullam ratione accusantium ut corporis eos voluptatibus deleniti fuga possimus commodi. Fugiat dolorem nemo vitae qui fugit dicta. Vel perspiciatis, molestiae, aperiam reprehenderit officia eos porro, deserunt vero hic veritatis esse tempora aliquid! Soluta eaque consequatur fugiat inventore voluptate sunt necessitatibus sapiente non! Beatae, neque sequi nobis fuga provident maxime harum consequatur nihil accusantium aperiam voluptatibus adipisci est assumenda corrupti iste qui debitis ipsa porro. Quis maxime molestiae quaerat ipsum illum temporibus laboriosam hic magnam exercitationem quam, enim, minima dolorum possimus aliquam beatae quisquam voluptas sint, dicta quibusdam similique saepe quas nemo? Consequuntur consequatur iste accusamus amet, molestias ex illo animi eaque sint, officia fugiat fuga veniam inventore, dignissimos id adipisci ad quos voluptates consectetur aperiam quo! Nobis repellat incidunt corrupti impedit eveniet earum dolores qui non facere molestiae nostrum ex doloribus quo, tenetur officiis veritatis architecto velit? Nisi reprehenderit laborum dignissimos quos dolorum tempora nulla incidunt. Inventore facere id esse odit! Officia earum aliquam excepturi quasi, sed vel necessitatibus accusantium quas mollitia expedita at quisquam, nulla nemo praesentium unde est cumque velit dolore! Libero et quod tempore, accusamus consectetur aliquid. Sint sequi debitis asperiores voluptas.
+        </p>
+
+    </div>
+</body>
+<script>
+    window.onscroll=function(){
+        updateProgressBar();
+    };
+    function updateProgressBar(){
+        var winScroll= document.body.scrollTop || document.documentElement.scrollTop;
+        var height= document.documentElement.scrollHeight- document.documentElement.clientHeight;
+        var scrolled=(winScroll/height)*100;
+        document.getElementsByClassName("progress")[0].style.width=scrolled +"%";
+        /*
+        document.getElementsByClassName("progress") returns a collection of elements. Even if there's only one element with the class name "progress", it is still a collection (array-like object). You need to access the first element in this collection using [0].
+        */
+
+        /*
+        
+        document vs. documentElement
+
+        ->document:
+
+        document is the root node of the HTML document. It represents the entire HTML document as a whole.
+        It provides access to the various parts of the document (e.g., elements, metadata, styles, etc.).
+
+        ->document.documentElement:
+
+        document.documentElement is a reference to the <html> element in the document.
+        The <html> element is the root element of an HTML document and contains the <head> and <body> elements.
+        document.documentElement allows you to access and manipulate the properties and methods of the <html> element directly.
+                
+        */
+    };
+</script>
+</html>

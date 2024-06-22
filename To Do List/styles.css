@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    border: 3px solid rgb(255, 0, 43);
+    border-radius: 10px;
+}
+#todo-form{
+    margin-bottom: 20px;
+}
+#todo-input{
+    border-radius: 5px;
+    height: 30px;
+    width: 400px;
+    border: 2px solid black;
+    outline-color: rgb(219, 36, 229);
+}
+button{
+    border-radius: 5px;
+    border-color: #dadada;
+    background-color: aqua;
+}
+#todo-list{
+    list-style-type: none;
+    padding: 0;
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.completed{
+    text-decoration: line-through;
+}
