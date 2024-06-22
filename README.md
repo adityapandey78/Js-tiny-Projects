@@ -1,7 +1,7 @@
 # This repo consists of small project which I have made during learing the Javascript.
 -> These are very tiny projects but contibuted a lot while learining in the journey.  \
 Link
-https://adityapandey78.github.io/Js-tiny-Projects/  \
+
 To Do List: https://adityapandey78.github.io/Js-tiny-Projects/To%20Do%20List  \
 Task 1: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%201 \
 Task 2: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%202  \
