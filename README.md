@@ -4,10 +4,10 @@ Link
 https://adityapandey78.github.io/Js-tiny-Projects/  \
 https://adityapandey78.github.io/Js-tiny-Projects/To%20Do%20List  \
 Task 3: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%201 \
-Task 4: https://adityapandey78.github.io/Js-tiny-Projects/  \
-Task 5: https://adityapandey78.github.io/Js-tiny-Projects/  \
-Task 6: https://adityapandey78.github.io/Js-tiny-Projects/  \
-Task 7: https://adityapandey78.github.io/Js-tiny-Projects/  \
-Task 8: https://adityapandey78.github.io/Js-tiny-Projects/  \
-Task 9: https://adityapandey78.github.io/Js-tiny-Projects/  \
+Task 4: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%202  \
+Task 5: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%203  \
+Task 6: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%204  \
+Task 7: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%205  \
+Task 8: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%206  \
+Task 9: https://adityapandey78.github.io/Js-tiny-Projects/Sheryians%20Tasks/Task%207  \
 
